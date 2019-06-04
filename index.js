@@ -16,6 +16,7 @@ app.post('/quiz', quizList.createQuiz)
 
 app.get('/details/:id', quizDetails.getQuiz);
 app.put('/details/:id', quizDetails.addQuestion);
+app.delete('/details/:id/:qid', quizDetails.deleteQuestion);
 
 app.get('/take/:id', quizTake.getQuiz);
 
