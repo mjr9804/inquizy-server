@@ -13,6 +13,7 @@ app.use(express.json());
 
 app.get('/quiz', quizList.getList);
 app.post('/quiz', quizList.createQuiz)
+app.delete('/quiz/:id', quizList.deleteQuiz);
 
 app.get('/details/:id', quizDetails.getQuiz);
 app.put('/details/:id', quizDetails.addQuestion);
