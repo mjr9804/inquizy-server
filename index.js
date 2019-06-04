@@ -17,7 +17,6 @@ app.post('/quiz', quizList.createQuiz)
 app.get('/details/:id', quizDetails.getQuiz);
 app.put('/details/:id', quizDetails.addQuestion);
 
-app.get('/take/:id', quizTake.getQuestion);
-app.post('/take/:id', quizTake.checkAnswer);
+app.get('/take/:id', quizTake.getQuiz);
 
 app.listen(port, () => console.log(`Inquizy app listening on port ${port}!`))
